@@ -5,16 +5,16 @@
 - Syntax
 - Variables, assignment, and differences between let, var, const
 - Comparison Operators<br>(== vs ===, > < >= <=, !== vs !=, &&, ||)
-      - == --> loosely equal
-      - === --> strictly equal
-      - > --> greater than
-      - < --> less than
-      - >= --> greater than or equal to
-      - <= --> less than or equal to
-      - != --> does not equal (just type)
-      - !== --> strictly does not equal (type and value)
-      - && --> (both variable sides need to be true)
-      - || --> OR operator (either variable side needs to be true)
+      <br> == --> loosely equal
+      <br> === --> strictly equal
+      <br> > --> greater than
+      <br> < --> less than
+      <br> >= --> greater than or equal to
+      <br> <= --> less than or equal to
+      <br> != --> does not equal (just type)
+      <br> !== --> strictly does not equal (type and value)
+      <br> && --> (both variable sides need to be true)
+      <br> || --> OR operator (either variable side needs to be true)
 - Array Methods (forEach, map, some, push, pop, shift, unshift, slice, sort)
 - Logic decision making (if/else, ternary)
 - Asynchronous data requests (fetch, or framework specific fetch (angulars HttpClientModule))
