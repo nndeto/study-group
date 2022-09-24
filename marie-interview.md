@@ -4,7 +4,7 @@
 
 - Syntax
 - Variables, assignment, and differences between let, var, const
-- Comparison Operators (== vs ===, > < >= <=, !== vs !=, &&, ||)
+- Comparison Operators<br>(== vs ===, > < >= <=, !== vs !=, &&, ||)
       == --> loosely equal
       === --> strictly equal
       * > --> greater than
