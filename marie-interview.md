@@ -5,6 +5,16 @@
 - Syntax
 - Variables, assignment, and differences between let, var, const
 - Comparison Operators (== vs ===, > < >= <=, !== vs !=, &&, ||)
+      == --> loosely equal
+      === --> strictly equal
+      * > --> greater than
+      * < --> less than
+      * >= --> greater than or equal to
+      * <= --> less than or equal to
+      * != --> does not equal (just type)
+      * !== --> strictly does not equal (type and value)
+      * && --> (both variable sides need to be true)
+      * || --> OR operator (either variable side needs to be true)
 - Array Methods (forEach, map, some, push, pop, shift, unshift, slice, sort)
 - Logic decision making (if/else, ternary)
 - Asynchronous data requests (fetch, or framework specific fetch (angulars HttpClientModule))
@@ -20,7 +30,7 @@
 
 - Using git and understanding how to leverage it.
 
-## Package Managers
+## Package Managers`
 
 - Understanding the basics of npm, the primary javascript package management solution
 - Understanding `package.json`, `npm install`, and how to run scripts `npm run`
