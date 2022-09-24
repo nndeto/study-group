@@ -17,7 +17,7 @@
       <br> || --> OR operator (either variable side needs to be true)
 - Array Methods (forEach, map, some, push, pop, shift, unshift, slice, sort)
 - Logic decision making (if/else, ternary)
- - Control flow is a nice way to think about if/else and ternary operators. It's saying to the program that IF this is true run this code or ELSE run that code
+      - Control flow is a nice way to think about if/else and ternary operators. It's saying to the program that IF this is true run this code or ELSE run that code
 - Asynchronous data requests (fetch, or framework specific fetch (angulars HttpClientModule))
 - DOM Manipulation - manipulating elements on the screen based off of user interaction or application states
 - Concepts of Hoisting, Event bubbling, Scope, Prototypes
