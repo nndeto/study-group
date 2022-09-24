@@ -1,9 +1,3 @@
-nico
-#6313
-nico — Today at 8:26 PM
-hellow
-can you guys see this
-CodeGeek — Today at 8:28 PM
 # Junior-Mid Level Frontend Software Engineer Roadmap
 
 ## Basic Javascript
