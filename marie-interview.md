@@ -3,7 +3,11 @@
 ## Basic Javascript
 
 - Syntax
-- Variables, assignment, and differences between let, var, const
+- Variables, assignment, and differences between let, var, const<br>
+      - var - is hoisted and can be overwritten and has wonky scoping <br>
+      - let - is a variable that can change and has superseded var; mutable<br>
+      - const - is a variable that can't be changed once it has been assigned; immutable<br>
+      https://medium.com/@codingsam/awesome-javascript-no-more-var-working-title-999428999994
 - Comparison Operators<br>(== vs ===, > < >= <=, !== vs !=, &&, ||)
       <br> == --> loosely equal
       <br> === --> strictly equal
@@ -25,7 +29,8 @@
 
 ## Browser Debugging
 
-- Using DevTools to debug Javascript/HTML/CSS at runtime. Leveraging the tool to your advantage.
+- Using DevTools to debug Javascript/HTML/CSS at runtime. Leveraging the tool to your advantage.<br>
+      - Using the inspect tool on Chrome helps you peer into elements and check what's happening under the website page's hood
 
 ## Version Control
 
@@ -36,7 +41,10 @@
 ## Package Managers`
 
 - Understanding the basics of npm, the primary javascript package management solution <br>
-      -NPM - stands for Node Package Manger - its a tool used for mannaging (installing and running) packages
+      - NPM - stands for Node Package Manger - its a tool used for mannaging (installing and running) packages<br>
+      - Free to use
+      - Has command line functionality
+      - Is used in tandem with Nodejs (runtime environment that allows JS to be run outside the browser)
 - Understanding `package.json`, `npm install`, and how to run scripts `npm run`
 
 ## CSS
