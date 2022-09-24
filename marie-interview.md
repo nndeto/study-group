@@ -16,7 +16,7 @@
       <br> && --> (both variable sides need to be true)
       <br> || --> OR operator (either variable side needs to be true)
 - Array Methods (forEach, map, some, push, pop, shift, unshift, slice, sort)
-- Logic decision making (if/else, ternary)
+- Logic decision making (if/else, ternary)<br>
       - Control flow is a nice way to think about if/else and ternary operators. It's saying to the program that IF this is true run this code or ELSE run that code
 - Asynchronous data requests (fetch, or framework specific fetch (angulars HttpClientModule))
 - DOM Manipulation - manipulating elements on the screen based off of user interaction or application states
@@ -29,11 +29,14 @@
 
 ## Version Control
 
-- Using git and understanding how to leverage it.
+- Using git and understanding how to leverage it.<br>
+      - Git is a system of saving and tracking all changes made to a project and its files. Git can be run on a local maching, but also distributed remotely to spaces like Bitbucket or Github to be saved online. <br>
+      - Common commands for git are 'git init' which initializes git, 'git add .' which will add all your files/changes to stage, 'git commit' which saves(commits) your files/changes to the branch, 'git status' which lets you know the status of your files
 
 ## Package Managers`
 
-- Understanding the basics of npm, the primary javascript package management solution
+- Understanding the basics of npm, the primary javascript package management solution <br>
+      -NPM - stands for Node Package Manger - its a tool used for mannaging (installing and running) packages
 - Understanding `package.json`, `npm install`, and how to run scripts `npm run`
 
 ## CSS
