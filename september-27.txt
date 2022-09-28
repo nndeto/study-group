@@ -1,0 +1,50 @@
+Notes:
+
+Runtime: 
+- Typically referring to BIG O, but sometimes it can be more literal and refer to how long 
+it takes your problem to run
+
+Big 0 notation - teaches you how to talk about the efficiency of algorithms, as its input increases
+- how much time and space they need
+- Worst-Case Scenario 
+    - Used to compare the efficiency of different algorithms
+    - Standard measure for comparison
+- Time Complexity 
+    - Measured based on the number of steps an algorithm needs to execute relative to the data set size
+- Layman’s Terms:
+    - Highly efficient algorithms —> execute in the same amount of time or with the same amount of RAM, no matter the size of the input; might increase a bit as the input does, but then they level off
+    - Pretty good algorithms —> execute in an amount of time that’s directly proportional to the size of input (ie. 10 size 5 seconds to 20 size 10 seconds)
+    - Inefficient algorithms —> execution time that increases more as the input does (gas-guzzling trucks)
+- Technical Terms:
+    - Highly Efficient
+        - Constant complexity
+        - Logarithmic complexity
+    - Pretty Good
+        - Linear complexity
+    - Inefficient
+        - Quadratic complexity
+        - Factorial complexity
+- Constant Complexity O(1) - efficiency !== speed
+    - Constant space and time no matter the size
+        - Throwing a bag of apples in trash will always take the same amount of time no matter the # of apples in bag
+        - Function that console logs something
+        - You could still take 1 step to do something but be very slow at it if it’s large —> like 20000 apples in a bag
+- Linear Complexity O(n)
+    - As the input increases, the processing time increases linearly
+        - One extra input = one more step
+        - (N) represents code running once for every input value
+        - Peeling apples —> time is related to how many apples
+        - forEach item iterration
+        - For loop iteration 
+- Quadratic Complexity O(n^2) —> n*n
+    - These execute at an n times n rate 
+        - Loop inside a loop 
+            - Has to do the outside loop step and then the inner loop step
+            - Outside loop runs, then inside loop runs —> so it has to start at the outside loop again, then outside loop runs, then inside loop runs —> so it has to start at the outside loop again
+    - Very inefficient 
+- Logarithmic Complexity O(log(N))
+    - Cuts the problem in half
+        - Think of a phone book that based on where you flip to, you’ll go either backwards or forwards
+- Factorial Complexity O(N!)
+    - To be avoided at all costs
+    - Randomly ordered over and over until it is correctly sorted
