@@ -22,3 +22,32 @@
         } 
             return true
     };
+
+    //Given two strings s and t, return true if t is an anagram of s, and false otherwise. 
+        // Link: https://leetcode.com/problems/valid-anagram/submissions/
+    var isAnagram = function(s, t) {
+        //     if anagram, return true
+        //     if not, return false
+        //     make sure both words lowercase --> action
+        //     compare both words --> if/else statement
+        //         probably going to sort them alphabetically to get the same order
+        //     return based on the result of the comparison --> action/ return statement
+            if (s.length != t.length) { //if they are not the same length, they are not an anagram
+                return false;
+            }
+        //     anagram --> aaagmnr
+        //     nagaram --> aaagmnr
+        //     bat --> abt
+        //     tab --> abt 
+        //     taking out the possibility of failing b/c cases don't match
+            let a = s.toLowerCase()
+            let b = t.toLowerCase()
+            a = a.split("").sort().join("") //NOTE TO SELF: STORE YOUR VALUES, DUH
+            b = b.split("").sort().join("")
+            if (a === b) {
+                return true
+            } else {
+                return false
+            }
+            
+        };
