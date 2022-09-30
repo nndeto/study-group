@@ -55,3 +55,35 @@
     // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
     // You may assume that each input would have exactly one solution, and you may not use the same element twice.
         // Link: https://www.educative.io/blog/data-strucutres-hash-table-javascript
+    //Solution 1
+    var twoSum = function(nums, target) {
+        //  nested for loop and for every value we create a variable difference, which stores the target 
+        //  minus that value and compare difference to all other values, and if difference is equal to any other 
+        //  value in the array and return indices if value is equal to another item in array
+            let difference =  null;
+            let ans = [];
+            for (let i = 0; i < nums.length; i++) {
+                difference = target - nums[i]   
+                for (let j = i+1; j < nums.length; j++) {
+                    if (difference === nums[j]) {
+                        ans.push([i])
+                        ans.push([j])
+                        return ans
+                    }
+                }
+            }
+        };
+
+        //Solution 2
+        var twoSum = function(nums, target) {
+            let ans = [];
+            for (let i = 0; i < nums.length; i++) {
+                for (let j = i+1; j < nums.length; j++) {
+                    if (nums[i] +nums[j] ===target) {
+                        ans.push([i])
+                        ans.push([j])
+                        return ans
+                    }
+                }
+            }
+        };
