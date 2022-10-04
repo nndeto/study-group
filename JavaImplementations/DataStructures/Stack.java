@@ -64,7 +64,6 @@ public class Stack {
         }
 
 public static void main(String [] args) {
-  
     Stack myStack = new Stack(); 
 
     if (myStack.isEmpty()) 
@@ -97,5 +96,4 @@ public static void main(String [] args) {
 
     System.out.println(myStack.hasSpace());
   }
-
 }
