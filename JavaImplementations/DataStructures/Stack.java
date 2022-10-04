@@ -1,4 +1,5 @@
 package JavaImplementations.DataStructures;
+
 import java.util.ArrayList;
 
 /* A stack is a linear data structure that follows a
@@ -9,28 +10,28 @@ import java.util.ArrayList;
 
 public class Stack {
 
-    //instance variables
+    // instance variables
     ArrayList<Integer> list;
     int size;
     int limit = 8;
 
-    //constructor
-    public Stack ()  {
+    // constructor
+    public Stack() {
         this.list = new ArrayList<Integer>();
         this.size = list.size();
     }
 
-    
     public int peek() {
-        //the last element in the list will be the top of the stack
+        // the last element in the list will be the top of the stack
         int lastElementIndx = list.size() - 1;
         return list.get(lastElementIndx);
     }
 
     public void push(int element) {
-        if (this.hasSpace())
+        if (this.hasSpace()) {
             list.add(element);
             size++;
+        }
     }
 
     public int pop() {
@@ -41,10 +42,10 @@ public class Stack {
         return lastElement;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         if (size == 0)
             return true;
-        else 
+        else
             return false;
     }
 
@@ -60,40 +61,40 @@ public class Stack {
         for (int el : list) {
             str = str + " " + String.valueOf(el);
         }
-            return str;
-        }
+        return str;
+    }
 
-public static void main(String [] args) {
-    Stack myStack = new Stack(); 
+    public static void main(String[] args) {
+        Stack myStack = new Stack();
 
-    if (myStack.isEmpty()) 
-        System.out.println("The stack is empty.");
-    else 
-        System.out.println("The stack is not empty.");
-    
-    myStack.push(4);
-    myStack.push(5);
-    myStack.push(6);
-    myStack.push(7);
-    myStack.push(8);
+        if (myStack.isEmpty())
+            System.out.println("The stack is empty.");
+        else
+            System.out.println("The stack is not empty.");
 
-    if (myStack.isEmpty()) 
-        System.out.println("The stack is empty.");
-    else 
-        System.out.println("The stack is not empty");
+        myStack.push(4);
+        myStack.push(5);
+        myStack.push(6);
+        myStack.push(7);
+        myStack.push(8);
 
-    System.out.println(myStack.toString());
+        if (myStack.isEmpty())
+            System.out.println("The stack is empty.");
+        else
+            System.out.println("The stack is not empty");
 
-    int top = myStack.pop();
-    System.out.println(top);
-    System.out.println(myStack.toString());
-    System.out.println(myStack.peek());
+        System.out.println(myStack.toString());
 
-    myStack.push(9);
-    myStack.push(10);
-    myStack.push(11);
-    myStack.push(12);
+        int top = myStack.pop();
+        System.out.println(top);
+        System.out.println(myStack.toString());
+        System.out.println(myStack.peek());
 
-    System.out.println(myStack.hasSpace());
-  }
+        myStack.push(9);
+        myStack.push(10);
+        myStack.push(11);
+        myStack.push(12);
+
+        System.out.println(myStack.hasSpace());
+    }
 }
