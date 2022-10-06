@@ -37,11 +37,13 @@ class Queue {
     }
     viewAll() {
         console.log(this.container)
+        return
     }
     peek() {
         if (this.container.length > 0) {
             console.log(this.container[0])
         }
+        return
     }
 }
 
