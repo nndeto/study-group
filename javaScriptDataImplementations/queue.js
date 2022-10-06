@@ -4,7 +4,9 @@
     // dequeue method --> remove item from queue
     // view whole queue --> view all queue
     // peek method --> look at first item in queue
-    
+//REAL LIFE EXAMPLES
+    //sending an email
+    //server while responding to request
 
 class Queue {
     constructor(maxSize) {
