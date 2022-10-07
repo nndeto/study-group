@@ -13,6 +13,11 @@ class Queue {
         if (isNaN(maxSize)) {
             maxSize =  25;
         }
+        /*
+        if maxSize is not a number --> true
+        if maxSize is a number --> false
+        so if the following is true and it is not a number make maxSize this number
+        */
         this.maxSize = maxSize;
         this.container = [];
     }
@@ -32,11 +37,13 @@ class Queue {
     }
     viewAll() {
         console.log(this.container)
+        return
     }
     peek() {
         if (this.container.length > 0) {
             console.log(this.container[0])
         }
+        return
     }
 }
 
