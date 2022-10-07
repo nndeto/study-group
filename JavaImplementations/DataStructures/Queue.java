@@ -1,4 +1,4 @@
-package JavaImplementations;
+package JavaImplementations.DataStructures;
 import java.util.ArrayList;
 
 public class Queue {
@@ -40,10 +40,10 @@ public class Queue {
     }
 
     public boolean isEmpty() {
-        if (size > 0) {
-            return false;
+        if (size == 0) {
+            return true;
         }
-        return true;
+        return false;
     }
 
     public String toString() {
