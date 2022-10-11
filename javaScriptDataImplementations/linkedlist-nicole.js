@@ -24,4 +24,41 @@
         constructor() {
             this.head = null;
         }
+
+        append(data) {
+            // make a new node
+            let newNode = new Node(data)
+            console.log(newNode)
+
+            // check for head and if no head, the new node becomes the node
+            if (this.head === null) {
+                this.head = newNode
+                return
+            }
+
+            // else search the LL till you find the last node(next = null)
+            let currentNode = this.head
+            while(currentNode.next != null) { //while there are nexts continue
+                currentNode = currentNode.next
+            }
+
+            // add the new node to the end of the last node
+            currentNode.next = newNode
+        }
+
+        print() {
+            // check for head, if none, do nothing
+            if(this.head === null) {
+                console.log("The linked list is empty.")
+                return
+            }
+
+            // else go ahead and print the data
+            let currentNode = this.head
+            while(currentNode != null ) {
+                console.log(currentNode.data)
+                currentNode = currentNode.next //keeps the loop moving
+                
+            }
+        }
     }
