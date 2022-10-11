@@ -2,10 +2,10 @@
 // METHODS
     //appendData --> adds nodes to the LL
     //print --> look at the LL
+    //clear --> empties a LL by making head point towards null
+    //getNode(index) --> returns node from specified index
     //insertAt(index) --> insert node at a specific index
     //removeFrom(index) --> removes node at a specific index
-    //getNode(index) --> returns node from specified index
-    //clear --> empties a LL by making head point towards null
 //REAL LIFE EXAMPLES
     // Undo, back button, command-z
 // GENERAL
@@ -59,6 +59,32 @@
                 console.log(currentNode.data)
                 currentNode = currentNode.next //keeps the loop moving
                 
+            }
+        }
+
+        clear() {
+            // check for anything
+            if(this.head === null) {
+                console.log("Can't clear, the linked list is empty.")
+                return
+            }
+
+            this.head = null
+        }
+
+
+        // continue working
+        getNode(index) {
+            let count = 0
+            let currentNode = this.head
+            if (index === count) {
+                console.log(currentNode.data)
+            } else if (count < index) {
+                currentNode = currentNode.next
+                count++
+                console.log(currentNode.data)
+            } else {
+                console.log("There is no value at that index.")
             }
         }
     }
