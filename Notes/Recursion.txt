@@ -1,0 +1,40 @@
+//Recursion - when a function calls itself
+
+/* A recursive function has three parts */
+	//Base Case - when the process can stop
+  //Action - function at work
+  //Recursive Case - function calling itself with progress made towards its base case (why: prevents infinite loops)
+  
+  
+function countDown(num) {
+	if (num < 0) { //Base Case
+  return
+  }
+  console.log(num) //see --> Action
+  return countDown(num - 1); //Recursive Case
+}
+
+
+countDown(5)
+
+/* countDown(5)
+if (5 < 0) //false
+console.log(5)
+countDonw(5 - 1)
+countDown(4)
+if (4 < 0) //false
+console.log(4)
+countDown(4 - 1)
+countDown(3)
+.......
+countDown(1)
+if (1 < 0) //false
+console.log(1)
+countDown(1 - 1)
+countDown(0)
+if (0 < 0) 
+console.log(0)
+countDown(0 - 1)
+countDown(-1)
+if (-1 < 0) //true
+return */
